@@ -2,7 +2,8 @@
 #
 # Install Jenkins On CentOS 6,7 and 8 by using jenkins.war file.
 # Note: here, we are using OpenJDK  
-#
+# Blog: https://sharadchhetri.com
+
 sudo yum install -y wget
 sduo yum install -y java-1.8.0-openjdk
 
