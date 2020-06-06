@@ -4,7 +4,7 @@
 # Note: here, we are using OpenJDK  
 #
 sudo yum install -y wget
-yum install -y java-1.8.0-openjdk
+sduo yum install -y java-1.8.0-openjdk
 
 sudo useradd -d /home/jenkins -m jenkins
 sudo usermod -s /bin/bash jenkins
