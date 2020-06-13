@@ -1,6 +1,6 @@
 #!/bin/bash
 # Description: Install Docker On CentOS 8
-# Blog: https://sharadchhetri.com
+# Tutorial: https://sharadchhetri.com/2020/06/09/how-to-install-docker-on-centos-8/
 
 sudo sed -i.bak 's/enforcing/disabled/g' /etc/selinux/config 
 sudo setenforce 0

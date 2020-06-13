@@ -1,7 +1,7 @@
 #!/bin/bash
 # Description: Install docker on Ubuntu
 # Tested: On Ubuntu 20.04 LTS, x86_64
-# Blog: https://sharadchhetri.com
+# Tutorial: https://sharadchhetri.com/2020/06/07/install-docker-on-ubuntu/
 #
 # Docker Supported Architecture: x86_64 (or amd64), armhf, arm64, s390x and ppc64le
 #
