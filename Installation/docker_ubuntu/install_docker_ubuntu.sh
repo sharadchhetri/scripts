@@ -6,7 +6,7 @@
 # Docker Supported Architecture: x86_64 (or amd64), armhf, arm64, s390x and ppc64le
 #
 
-_arch=$(arch)
+_arch=$(dpkg --print-architecture)
 sudo apt -y update
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
