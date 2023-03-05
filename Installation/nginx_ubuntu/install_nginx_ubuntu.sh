@@ -3,6 +3,7 @@
 # Description: This script will install the nginx in Ubuntu Servers
 # Created By: Sharad Chhetri
 # Date: 05-Mar-2023
+# Blog: https://sharadchhetri.com
 
 _package="nginx"
 _signing_key_url=https://nginx.org/keys/nginx_signing.key
