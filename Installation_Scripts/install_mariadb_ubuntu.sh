@@ -5,7 +5,7 @@
 # Author: Sharad Chhetri
 # Blog: https://sharadchhetri.com
 
-_mariadb_version=11.7
+_mariadb_version=11.5
 _ubuntu_release_code=$(lsb_release -cs 2>/dev/null)
 
 # Using US Giganet Apt Repository
