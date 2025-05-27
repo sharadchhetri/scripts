@@ -71,8 +71,8 @@ foreach ($variable in $variables) {
     $variableToUpdate = New-Object -TypeName PSObject
     $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Name" -Value $variable.Name
     $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Value" -Value $variable.Value
-    $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Value" -Value $variable.Scope
-    $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Value" -Value $variable.Prompt
+    $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Scope" -Value $variable.Scope
+    $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Prompt" -Value $variable.Prompt
     $variableToUpdate | Add-Member -MemberType NoteProperty -Name "Type" -Value $variable.Type
     $variableToUpdate | Add-Member -MemberType NoteProperty -Name "IsSensitive" -Value ($variable.IsSensitive -replace '\$')
 
