@@ -13,7 +13,7 @@ $octopusAPIKey = "Your-API-Key"
 $header = @{ "X-Octopus-ApiKey" = $octopusAPIKey }
 
 # Give Space Name
-$spaceName = 'Default'
+$spaceName = 'TestSpace'
 
 # Path to your CSV file
 $csvPath = "C:\variable-set.csv"
@@ -87,9 +87,10 @@ foreach ($variable in $variables) {
 $result = $variableSet | ConvertTo-Json -Depth 10
 
 # Add or update variable in variable set
-Invoke-RestMethod -Method Put -Uri "$octopusURL/api/$($space.Id)/variables/variableset-LibraryVariableSets-40" -Headers $header -Body $result -ContentType "application/json"
+Invoke-RestMethod -Method Put -Uri "$octopusURL/api/$($space.Id)/variables/$variableSetId" -Headers $header -Body $result -ContentType "application/json"
 }
 
 # calling functions
 check_liberaryVariableSet
 create_new_variables
+
